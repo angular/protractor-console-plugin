@@ -1,0 +1,35 @@
+{
+  "name": "protractor-console-plugin",
+  "version": "0.1.0",
+  "description": "Protractor plugin that checks the browser log after each test for warnings and errors",
+  "main": "index.js",
+  "scripts": {
+    "start": "./node_modules/httpster/bin/httpster -d testapp/ -p `node -p 'process.env.HTTP_PORT || require(\"./spec/environment\").webServerDefaultPort'`",
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/angular/protractor-console-plugin.git"
+  },
+  "keywords": [
+    "angular",
+    "test",
+    "testing",
+    "webdriver",
+    "webdriverjs",
+    "selenium",
+    "protractor",
+    "protractor-plugin"
+  ],
+  "author": "Sammy Jelin (sjelin@gmail.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/angular/protractor-console-plugin/issues"
+  },
+  "homepage": "https://github.com/angular/protractor-console-plugin",
+  "devDependencies": {
+    "express": "^4.13.3",
+    "httpster": "^1.0.1",
+    "protractor": "^2.5.1"
+  }
+}
