@@ -28,8 +28,10 @@
   },
   "homepage": "https://github.com/angular/protractor-console-plugin",
   "devDependencies": {
-    "express": "^4.13.3",
     "httpster": "^1.0.1",
     "protractor": "^2.5.1"
+  },
+  "dependencies": {
+    "q": "^1.4.1"
   }
 }
