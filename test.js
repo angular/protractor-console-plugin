@@ -4,7 +4,8 @@ var Executor = require('./test_util').Executor;
 var ptor = 'node node_modules/protractor/lib/cli.js ';
 
 var passingTests = [
-    ptor + 'spec/consolePassConfig.js'
+  ptor + 'spec/consolePassConfig.js',
+  ptor + 'spec/consolePassFilterSpecConfig.js',
 ];
 
 var executor = new Executor();
@@ -50,5 +51,12 @@ executor.addCommandlineTest(
   .expectErrors([
     {message: 'This is a test error'}
   ]);
+
+  executor.addCommandlineTest(
+    ptor + 'spec/consoleFailFilterSpecConfig.js')
+    .expectExitCode(1)
+    .expectErrors([
+      {message: 'This is a test error'}
+    ]);
 
 executor.execute();

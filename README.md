@@ -11,10 +11,11 @@ console. A false setting to logWarnings also overrides the failOnWarning setting
 exports.config = {
   plugins: [{
     package: 'protractor-console-plugin',
-    failOnWarning: {Boolean}                (Default - false),
-    failOnError: {Boolean}                  (Default - true),
-    logWarnings: {Boolean}                  (Default - true),
-    exclude: {Array of strings and regex}   (Default - [])
+    failOnWarning: {Boolean}                   (Default - false),
+    failOnError: {Boolean}                     (Default - true),
+    logWarnings: {Boolean}                     (Default - true),
+    exclude: {Array of strings and regex}      (Default - [])
+    excludeSpecs: {Array of strings and regex} (Default - [])
   }]
 };
 ```
